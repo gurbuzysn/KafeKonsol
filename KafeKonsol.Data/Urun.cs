@@ -8,12 +8,11 @@ namespace KafeKonsol.Data
 {
     public class Urun
     {
-        public string UrunAd { get; set; }
+        public string UrunAd { get; set; } = string.Empty;
         public decimal BirimFiyat { get; set; }
-
-        public string ToString()
+        public override string? ToString()
         {
-            
+            return base.ToString();
         }
 
     }
